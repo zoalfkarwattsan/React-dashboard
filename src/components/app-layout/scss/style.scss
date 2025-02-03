@@ -1,0 +1,26 @@
+[dir] .chat-application .right-side-wrapper .start-chat-area, [dir] .chat-application .right-side-wrapper .user-chats{
+  background-image: none !important;
+}
+
+.side-left-footer {
+  padding: 0 1rem;
+  background-color: #fff;
+  border-top: 1px solid #ebe9f1;
+}
+
+@media (max-width: 991px){
+  .chat-application {
+    .sidebar-content {
+      .sidebar-close-icon {
+        visibility: visible;
+        //top: 15px;
+        right: 0;
+        padding: 0.65rem;
+        line-height: 1;
+      }
+      .left-side-header {
+        padding-right: 2.5rem;
+      }
+    }
+  }
+}

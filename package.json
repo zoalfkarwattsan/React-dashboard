@@ -1,0 +1,80 @@
+{
+  "name": "fwork-frontend",
+  "version": "3.0.0",
+  "fworkVersion": "3.0.0",
+  "private": true,
+  "dependencies": {
+    "@atlaskit/navigation": "^37.0.2",
+    "@atlaskit/tree": "^8.6.0",
+    "@react-awesome-query-builder/bootstrap": "^6.1.1",
+    "@syncfusion/ej2-base": "21.1.40",
+    "@syncfusion/ej2-react-calendars": "21.1.41",
+    "@syncfusion/ej2-react-charts": "21.1.41",
+    "@syncfusion/ej2-react-dropdowns": "21.1.41",
+    "@syncfusion/ej2-react-layouts": "21.1.37",
+    "@syncfusion/ej2-react-lists": "21.1.41",
+    "@syncfusion/ej2-react-navigations": "21.1.39",
+    "@syncfusion/ej2-react-notifications": "21.1.37",
+    "@syncfusion/ej2-react-treegrid": "21.1.41",
+    "@syncfusion/ej2-treegrid": "21.1.41",
+    "@testing-library/react": "^16.0.0",
+    "@uppy/react": "^3.1.2",
+    "@use-symbology-scanner/react": "^1.0.3",
+    "@wattsan/core": "https://bitbucket.org/ibaaibrahim/frontend-libs.git",
+    "autosize": "^5.0.1",
+    "bootstrap-daterangepicker": "^3.1.0",
+    "color": "^4.2.3",
+    "equation-resolver": "^1.0.0-rc.1",
+    "js-file-download": "^0.4.12",
+    "lightgallery": "^2.7.0",
+    "moment-timezone": "^0.5.37",
+    "msw": "^2.3.1",
+    "react-barcode": "^1.5.1",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-bootstrap-daterangepicker": "^8.0.0",
+    "react-device-detect": "^2.2.2",
+    "react-equation": "^1.0.0-rc.1",
+    "react-hotkeys-hook": "^4.3.0",
+    "react-image-marker": "^1.2.0",
+    "react-to-print": "^2.15.1",
+    "rrule": "^2.7.1",
+    "use-scan-detection": "^0.2.3"
+  },
+  "devDependencies": {
+    "@types/sortablejs": "1.10.6",
+    "eslint": "7.8.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-react": "7.20.6",
+    "sass-loader": "^8.0.2"
+  },
+  "scripts": {
+    "start": "craco --openssl-legacy-provider start",
+    "build": "craco --openssl-legacy-provider build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js src/**/*.jsx",
+    "lint:fix": "eslint src/**/*.js --fix"
+  },
+  "resolutions": {
+    "//": "See https://github.com/facebook/create-react-app/issues/11773",
+    "react-error-overlay": "6.0.9",
+    "redux": "4.0.5",
+    "react-redux": "7.2.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": ""
+}

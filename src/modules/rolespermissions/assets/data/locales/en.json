@@ -1,0 +1,12 @@
+{
+  "rolespermissions": {
+    "nav": {
+      "rolesPermissions" : "Roles & Permissions"
+    },
+    "inputs": {
+      "name": "Name",
+      "normalizedName": "Normalized name",
+      "concurrencyStamp": "Concurrency stamp"
+    }
+  }
+}

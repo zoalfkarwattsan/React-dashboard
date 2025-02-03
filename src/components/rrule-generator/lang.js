@@ -1,0 +1,30 @@
+import {trans} from '@utils'
+
+export const getTextKeys = {
+  every: trans('rrule.text.every'),
+  until: trans('rrule.text.until'),
+  day: trans('rrule.text.day'),
+  days: trans('rrule.text.days'),
+  week: trans('rrule.text.week'),
+  weeks: trans('rrule.text.weeks'),
+  on: trans('rrule.text.on'),
+  hour: trans('rrule.text.hour'),
+  hours: trans('rrule.text.hours'),
+  minute: trans('rrule.text.minute'),
+  minutes: trans('rrule.text.minutes'),
+  second: trans('rrule.text.second'),
+  seconds: trans('rrule.text.seconds'),
+  in: trans('rrule.text.in'),
+  and: trans('rrule.text.and'),
+  or: trans('rrule.text.or'),
+  not: trans('rrule.text.not'),
+  for: trans('rrule.text.for'),
+  time: trans('rrule.text.time'),
+  times: trans('rrule.text.times'),
+  'on the': trans('rrule.text.on_the'),
+  'in the': trans('rrule.text.in_the'),
+  st: trans('rrule.text.st'),
+  nd: trans('rrule.text.nd'),
+  rd: trans('rrule.text.rd'),
+  th: trans('rrule.text.th')
+}

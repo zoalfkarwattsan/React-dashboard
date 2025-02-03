@@ -1,0 +1,8 @@
+name: flowdit-fe
+recipe: mean
+config:
+  node: 14
+  build:
+    - yarn install
+    - yarn build
+  command: npm start

@@ -1,0 +1,315 @@
+/*================================================================================
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+@import './variables/_variables';
+
+.auth-inner .brand-logo{display: none !important;}
+.login-logo img{max-height: 28px;}
+
+.main-menu:not(.expanded) {
+  .brand-logo{ margin-left: 0.5rem;}
+  .brand-text{display: none!important;}
+}
+.main-menu.expanded{
+  .brand-logo{display: none!important;}
+  .navbar-header{
+    .navbar-brand{
+      //margin-top: 1.35rem!important;
+      .brand-logo img{
+        max-width: 30px;
+      }
+    }
+    .nav-item{margin-left: auto;}
+  }
+}
+.navbar-header .brand-text{height: 40px;width:160px;color: transparent !important;background-size: contain;background-repeat: no-repeat;background-image: url("../images/logo/logo-full-dark.png");filter:  brightness(0) invert(1); }
+.main-menu {
+  .main-menu-content{
+    .navigation-main{
+      margin-top: 1rem;
+    }
+  }
+  .navbar-header{
+    padding: 0.35rem 1rem 0.3rem 1rem;
+    .navbar-brand {
+      .brand-logo {
+        margin-right: unset;
+        img{
+          max-width: 40px;filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+}
+
+.app-content{
+  .content-wrapper:not(.auth-v2){padding-bottom: 2rem;}
+}
+
+.scroll-to-top > div{z-index: 9999;}
+.scroll-to-top button{opacity: 0.5}
+.scroll-to-top button:hover{opacity: 1}
+
+html .content .content-wrapper .content-header-title{font-weight: 200!important;}
+[dir=ltr] .modal-header .close {
+  margin: -0.8rem -1.4rem -0.8rem auto !important;
+}
+.form-group label{
+  font-weight: bold;
+}
+
+.item-row.is-deleted {
+  background: #ffe4e4;
+}
+//.swal2-content {
+//  text-align: left;
+//}
+.flex-1{
+  flex:1;
+}
+.react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell{
+  height: unset !important;
+  word-break: normal;
+}
+
+.dropdowntree-default  .col-lg-8 {
+  min-height: 250px;
+}
+
+.dropdowntree-default #default {
+  margin: 0 auto;
+  width: 250px !important;
+  padding-top: 15px;
+}
+
+.dropdowntree-default .property-panel-content {
+  overflow: hidden;
+}
+
+.dropdowntree-default .property-section{
+  padding-bottom: 15px;
+  width: 200px;
+  left: 80px;
+}
+
+.modal{
+  //display: flex !important;
+  .modal-header{
+
+  }
+  .modal-fullscreen{
+    max-width: none;
+    //margin: auto;
+    width: 90vw;
+    height: 90vh;
+
+    .modal-content {
+      height: 100%;
+      border: 0;
+      border-radius: 0;
+    }
+    .modal-header {
+      border-radius: 0;
+      .close{
+        transform: translate(0px, -2px);
+        &:hover{transform: translate(0px, -2px);}
+        &:focus{transform: translate(0px, -2px);}
+        &:active{transform: translate(0px, -2px);}
+      }
+    }
+    .modal-body {
+      overflow-y: auto;
+    }
+    .modal-footer {
+      border-radius: 0;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .modal {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+
+/* Circle palette customization */
+.color-picker-component{
+  .e-color-picker{
+    border: none;
+    width: 180px;
+    .e-value-switch-btn{
+      display: none;
+    }
+    .e-hsv-color{
+      height: 100px;
+    }
+
+    .e-selected-value{
+      padding: 0px 10px 15px;
+      .e-input-container{
+        width: 100%;
+        .e-float-input.e-numeric{
+          height: 30px
+        }
+      }
+
+      input{
+        font-size: 13px;
+        line-height: 14px;
+        height: 30px !important;
+        padding-left: 1px;
+        padding-right: 1px;
+
+      }
+    }
+  }
+  .e-color-palette{
+    border: none;
+    .e-palette{
+      .e-circle-palette {
+        border: 0;
+        height: 32px;
+        width: 32px;
+        border-radius: 16px;
+
+        margin: 4px;
+        &hover {
+          box-shadow: none;
+          transform: scale(1.2);
+          transition: transform .2s ease-out;
+        }
+        .e-circle-selection {
+          height: 32px;
+          width: 32px;
+          border-radius: 16px;
+          transform: scale(0);
+          transition: transform 1.2s ease-in;
+
+        }
+        &.e-circle-active{
+          .e-circle-selection {
+            display: block;
+            transform: scale(0.8) !important;
+            background-color: #fff;
+            transition: transform .2s ease-out !important;
+          }
+        }
+
+      }
+    }
+  }
+  .e-switch-ctrl-btn{
+    display: none !important;
+  }
+}
+
+.card{
+  .card-header.header-sm{
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  }
+}
+
+$numbers: (
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4
+);
+
+@each $zIndexNumber, $number in $numbers {
+  .z-index-#{$zIndexNumber} {
+    z-index: $number;
+  }
+}
+
+.select__menu{
+  .select__menu-list{
+    .select__group{
+      .select__group-heading{
+        color: #999!important;
+        font-weight: normal !important;
+      }
+    }
+  }
+}
+
+.rrule-generator {
+  .recurrence-started-at {
+    position: relative;
+    span.symbol {
+      align-items: center;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -20px;
+    }
+  }
+}
+
+.button-group-wrapper {
+  .rounded-circle {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0;
+  }
+}
+
+.flatpickr-calendar {
+  .flatpickr-day.prevMonthDay,
+  .flatpickr-day.nextMonthDay {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+}
+
+.btn-white{
+  background-color: white;
+}
+
+.text-white{
+  color: white;
+}
+
+.header-navbar .navbar-container ul.navbar-nav li.dropdown-user .dropdown-menu {
+  width: auto;
+}
+
+.btn.btn-xs.btn-icon, .btn-group-xs > .btn.btn-icon {
+  padding: 0.2rem;
+  line-height: 0.2;
+}
+
+.overflow-wrap-anywhere{
+  overflow-wrap: anywhere;
+}
+
+[dir=rtl] .e-pager .e-icon-last::before, .e-grid-menu .e-icon-last::before{
+  content: '\e7ba';
+}
+
+[dir=rtl] .e-pager .e-icon-next::before, .e-grid-menu .e-icon-next::before{
+  content: '\e70d';
+}
+
+[dir=rtl] .e-pager .e-icon-prev::before, .e-grid-menu .e-icon-prev::before{
+  content: '\e76a';
+}
+
+[dir=rtl] .e-pager .e-icon-first::before, .e-grid-menu .e-icon-first::before {
+  content: "\e7bb";
+}
+
+[dir=rtl] .e-treegrid .e-treegridexpand {
+  transform: rotate(+90deg);
+}
+
+[dir=rtl] .e-treegrid .e-treegridcollapse {
+  transform: rotate(+180deg);
+}
